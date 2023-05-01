@@ -1,0 +1,85 @@
+.profile {
+  display: block;
+  width: 400px;
+  margin: 30px auto;
+
+  align-items: center;
+  justify-content: center;
+  border: solid #736c6c;
+  border-radius: 5px;
+  box-shadow: inset 0 7em 10em -5em rgba(255, 255, 255, 0.6),
+    0 0.3em 0.5em -0.2em rgba(100, 100, 100, 1),
+    0 1em 2em -0.75em rgba(100, 100, 100, 0.75),
+    0 1em 3em -0.5em rgba(100, 100, 100, 0.5),
+    0 3em 3em -0.25em rgba(100, 100, 100, 0.2);
+  cursor: pointer;
+}
+
+.profile:hover {
+  scale: 1.04;
+  transition: scale 350ms;
+  box-shadow: 4px 4px 17px -3px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 4px 4px 17px -3px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 4px 4px 17px -3px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #6f6c6c;
+  padding: 20px;
+}
+.avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.name {
+  padding: 10px 0px;
+  font-size: 32px;
+  font-weight: 700;
+}
+.tag {
+  padding: 10px 0px;
+  font-size: 22px;
+  font-weight: 500;
+}
+.location {
+  padding: 10px 0px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.stats {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  justify-content: center;
+  background-color: #6f6c6c;
+}
+.stats li {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #dde5ed;
+  width: calc((400px / 3) - 1px);
+  height: 100px;
+}
+
+.label {
+  padding: 10px 0px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #3f4f5b;
+}
+.quantity {
+  font-size: 30px;
+  font-weight: 700;
+  color: #2c2727;
+}
