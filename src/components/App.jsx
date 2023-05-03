@@ -1,19 +1,22 @@
-import { SocProfile } from 'components/SocProfile/SocProfile';
-import userInfo from 'components/SocProfile/user.json';
+import { Profile } from 'components/Profile/Profile';
+import { Statistics } from './Statistics/Statistics';
+
+import userInfo from 'components/Profile/user.json';
+import data from 'components/Statistics/data.json';
 
 export const App = () => {
   return (
     <div>
-      <SocProfile
+      <Profile
         username={userInfo.username}
         tag={userInfo.tag}
         location={userInfo.location}
         avatar={userInfo.avatar}
-        followers={userInfo.stats.followers}
-        views={userInfo.stats.views}
-        likes={userInfo.stats.likes}
+        stats={userInfo.stats}
       />
+      <Statistics title="Upload stats" stats={data} />
     </div>
+
     // <div
     //   style={{
     //     height: '100vh',
